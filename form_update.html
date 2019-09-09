@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        font-family: helvetica;
+        font-size: 18px;
+        color: black;
+        margin: 0px;
+        padding: 0px;
+      }
+      #formContainer {
+        width: 300px;
+        margin: 50px auto;
+      }
+      #sigContainer {
+        width: 700px;
+        margin: 50px auto;
+      }
+      h1{
+        font-size: 25px;
+        text-align: center;
+        padding: 20px;
+      }
+      .textBox{
+        width: 100%;
+        margin: 5px 0px 10px 0px;
+        height: 30px;
+        border: none;
+        border-radius: 15px;
+      }
+      #formButton{
+        width: 300px;
+        height: 30px;
+        border: none;
+        border-radius: 15px;
+        background-color: orange;
+        color: black;
+        display: block;
+        margin: 30px auto;
+        padding: 0px;
+        font-weight: 800px;
+        font-size: 16px;
+        transition: all .2s ease-in;
+      }
+      #formButton:hover{
+        background-color: white;
+      }
+      span{
+        font-size: 14px;
+        line-height: 1px;
+        display: inline-block;
+      }
+      table{
+        border-spacing:0;
+      }
+      #noSelect{
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: #0068B2;
+        color: white;
+      }
+      p{
+        text-align: center;
+        justify-content: center;
+      }
+      input[type=text]{
+        text-indent:15px;
+      }
+      input:focus{
+        outline: none;
+      }
+      hr{
+        background-color: #0068B2
+      }
+      #noSelect img{
+        vertical-align: bottom;
+        width: 200px;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <div id="noSelect">
+      <h1>Local Pages Signature Generator</h1>
+      <div id="formContainer">
+        <form>
+
+          Full Name:<br>
+          <input class="textBox" id="nameTxt" type="text" name="name"><br>
+
+          Phone:<br>
+          <input class="textBox" id="phoneTxt" type="text" name="phone"><br>
+
+          Title:<br>
+          <input class="textBox" id="titleTxt" type="text" name="title"><br>
+
+          <input id="formButton" type="button" onclick="updateSig()" value="Generate Signature">
+
+        </form>
+      </div>
+      <p>Hold CTRL + A to select the signature</p>
+      </br>
+      <p>Copy, then paste this into your email clients signature settings</p>
+      </br>
+      <img src="./peek.png">
+      <hr>
+    </div>
+    <div id="sigContainer">
+      </br>
+      </br>
+      <table data-mysignature-date="2019-07-02T15:04:21.041Z" data-mysignature-is-paid="0" width="600" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td>
+            <table cellspacing="0" cellpadding="0" border="0" width="600">
+              <tr>
+                <td valign="top" width="150"> <img alt="Local Pages Ltd" width="150"
+                    src="./40logo.png" style="display:block;"/> </td>
+                <td style="font-size:1em;padding:0 15px 0 15px;vertical-align: top;" valign="top">
+                  <table width="500"cellspacing="0" cellpadding="0" border="0" style="line-height: 1.3;font-family: Helvetica, sans-serif;font-size:100%;color: #000001;">
+                    <tr>
+                      <td>
+                        <div id="sigName" style="font: 14px  Helvetica, sans-serif; line-height: 20px;color:#000001;">Tom Copestake</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div id="sigTitleDept" style=" font-size: 14px;color:#000001;font-family: Helvetica, sans-serif;"> Studio Manager </div></br>
+                      </td>
+                    </tr>
+                    <tr style="font-size: 15px">
+                      <td> <span style="font-family: Helvetica, sans-serif;color:#0064BC;">DD: </span> <span><a id="sigPhone" style="font-family: Helvetica, sans-serif;color:#000001;" href="tel:0117 9630016">0117 9630016</a></span></td>
+                    </tr>
+                    <tr style="font-size: 15px">
+                      <td><span style="font-family: Helvetica, sans-serif;color:#0064BC;">Tel: </span> <span><a style="font-family: Helvetica, sans-serif;color:#000001;" href="tel:01179231122">0117 9231122</a></span></td>
+                    </tr>
+                    <tr style="font-size: 15px">
+                      <td></br> <span style="font-family: Helvetica, sans-serif;color:#0064BC;">Website: </span> <span style="font-family: Helvetica, sans-serif;"><a href="http://www.localpages.co.uk" style="color:#000001;"
+                            target="_blank">www.localpages.co.uk</a></span> </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <table cellspacing="5" cellpadding="5" border="0" style="line-height: 1; padding-top: 12px;">
+                  <tr>
+                    <td width="11px"></td>
+                    <td style="padding: 4px 5px 0 0;"><a href="https://www.facebook.com/yourlittlebluebook"><img alt="" style="width:32px;" width="32" src="https://68ef2f69c7787d4078ac-7864ae55ba174c40683f10ab811d9167.ssl.cf1.rackcdn.com/facebook-icon_square_32x32.png"></a></td>
+
+                    <td style="padding: 4px 5px 0 0;"><a href="https://www.linkedin.com/company/local-pages/"><img alt="" style="width:32px;" width="32" src="https://68ef2f69c7787d4078ac-7864ae55ba174c40683f10ab811d9167.ssl.cf1.rackcdn.com/linkedin-icon_square_32x32.png"></a></td>
+
+                    <td style="padding: 4px 5px 0 0;"><a href="https://twitter.com/tweetlocalpages"><img alt="" style="width:32px;" width="32" src="https://68ef2f69c7787d4078ac-7864ae55ba174c40683f10ab811d9167.ssl.cf1.rackcdn.com/twitter-icon_square_32x32.png"></a></td>
+                  </tr>
+                </table>
+              </tr>
+              <tr>
+                <td nowrap colspan="3" style="padding-top: 20px; font-size: 12px; width:1100px; ">
+                  Registered in England and Wales. No: 08576948
+                  Registered office: 1, Upton Road, Bristol BS3 1LW</br></br>
+
+                  This email and any attached files are confidential and copyright protected. If you are not the addressee, any dissemination of this communication is strictly prohibited. Unless otherwise expressly agreed in writing, nothing stated in this communication shall be legally binding. It is the responsibility of the recipient to ensure that this message and its attachments are virus free.
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      function updateSig(){
+
+        document.getElementById('sigName').textContent = document.getElementById('nameTxt').value;
+        document.getElementById('sigPhone').textContent = document.getElementById('phoneTxt').value;
+        document.getElementById('sigPhone').href = "tel:" + document.getElementById('phoneTxt').value;
+        document.getElementById('sigTitleDept').textContent = document.getElementById('titleTxt').value;
+
+      }
+
+    </script>
+  </body>
+</html>
